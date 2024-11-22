@@ -8,6 +8,7 @@
     <link rel="icon" href="favicon.png" type="favicon/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="script" href="script.js">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
 </head>
 <body>
@@ -35,6 +36,13 @@
                 <li><a href="services.html">Services</a></li>
             </ul>
         </nav>
+        <nav class="contact-nav">
+            <ul>
+                <li id="contact-nav">
+                    <a href="#contact-us">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Main Section with Contact Form and Description -->
@@ -48,7 +56,7 @@
                 </a>
             </div>
 
-            <section class="contact-form">
+            <section class="contact-form" id="contact-form">
                 <h2>Contact Us</h2>
                 <form action="https://formsubmit.co/u21465577@tuks.co.za" method="POST">
                     <div class="input-group">
@@ -78,6 +86,7 @@
                     </div>
                     <button type="submit">Submit</button>
                 </form>
+                
             </section>
         </div>
 
@@ -99,25 +108,36 @@
             <div class="footer-contact">
                 <h4>Contact Details</h4>
                 <ul>
-                    <li><i class="fas fa-phone"></i>+27 82 725 7037</li>
-                    <li><i class="fas fa-envelope"></i>info@ataxaccounting.co.za</li>
-                    <li><i class="fas fa-clock"></i>08:00am to 17:00pm</li>
+                    <li><i class="fas fa-phone"></i> +27 82 725 7037</li>
+                    <li><i class="fas fa-envelope"></i> info@ataxaccounting.co.za</li>
+                    <li><i class="fas fa-clock"></i> 08:00am to 17:00pm</li>
                 </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow us on Social Media</h4>
+                <a href="https://linkedin.com" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61559741714079&mibextid=LQQJ4d" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook"></i>
+                </a>
             </div>
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="#contact-us">Contact Us</a></li>
+                    <li><a href="index.html#contact-us">Contact Us</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="services.html">Services</a></li>
                 </ul>
             </div>
         </div>
-    </footer>
+        </footer>
+
 
     <footer  class="copyright">
         <p>&copy; 2024 ATAX Accounting and Consulting Services | Built By H E Du Plessis | All Rights Reserved</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
