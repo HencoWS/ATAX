@@ -11,6 +11,50 @@ body {
     color: #333;
 }
 
+header {
+    position: relative;
+    z-index: 1000; /* Keep the header above the hero section */
+    background-color: rgba(255, 255, 255, 0.9); /* Optional: Add a semi-transparent background for better visibility */
+}
+
+/* Prevent Margin Issues */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    height: 60vh; /* Set the height of the hero section */
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the section without distortion */
+    filter: brightness(50%); /* Darken the image for contrast */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Keep the image behind other elements */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 3rem; /* Make the text larger */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8); /* Add strong shadow for visibility */
+    z-index: 2; /* Ensure the text is above the image */
+    white-space: nowrap; /* Prevent text wrapping */
+}
 
 
 /*////////////////////////////////CONTACT DETAILS BAR////////////////////////////////*/
@@ -110,7 +154,7 @@ margin-left:900px ;
  font-size: 2em;
     color: #333;
     margin-bottom: -20px;
-    font-weight: normal;
+    font-weight: bold;
     padding: 40px 20px;
 }
 
@@ -133,6 +177,7 @@ margin-left:900px ;
     padding: 10px 0; /* Only vertical padding, no horizontal */
     margin: 0; /* Removes any outer margins */
 }
+
 
 .footer-content {
     display: flex;
@@ -201,12 +246,24 @@ margin-left:900px ;
     color: #0067c7;
 }
 
-.footer-bottom {
+.footer-social h4 {
+    margin-bottom: 30px; /* Increase spacing between the heading and the icons */
+}
+
+.footer-social {
     text-align: center;
-    padding-top: 20px;
+}
+
+.footer-social .social-icon {
+    font-size: 1.8rem;
     color: #333;
-    border-top: 1px solid #ccc;
-    margin-top: 40px;
+    margin: 0 10px;
+    transition: color 0.3s;
+    display: inline-block;
+}
+
+.footer-social .social-icon:hover {
+    color: #0067c7;
 }
 
 
@@ -309,23 +366,14 @@ margin-left:900px ;
 
 /*////////////////////////SERVICES PAGE////////////////////////*/
 
-
-.services-heading {
-    text-align: center;
-    font-size: 2rem; /* Adjust as needed */
-    margin-top: 200px;
-    margin-bottom: -150px; /* Space between heading and service boxes */
-    color: white; /* Adjust color as needed */
-}
-
 .services-section {
-    background-image:url(images/services.jpg);
     background-position: center;
     background-attachment:fixed ;
     background-size: cover;
     background-position: center;
     min-height: 80vh;
-    padding: 200px 10px;
+    padding: 50px 30px;
+    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 80px; /* Spacing between service boxes */
@@ -333,23 +381,84 @@ margin-left:900px ;
     background-color: #f9f9f9;
 }
 
+
 .service-box {
     position: relative;
-    width: 300px; /* Ensure all boxes have the same width */
-    height: 330px;
+    width: 300px;
     overflow: hidden;
-    background-color:lightblue; /* Background color for the box */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow to separate boxes */
-    border-radius: 8px; /* Optional: rounds corners for a polished look */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.service-box img {
-    width: 300px;
-    height: 288px;
-    object-fit: fill; /* Ensures the image covers the box */
-    display: block;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+.service-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
 }
+
+
+.servicebox-heading {
+    text-align: center;
+    padding: 2px 0;
+    background-color: #add8e6; /* Light blue */
+    color: #000;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.service-box:hover .overlay {
+    opacity: 1;
+}
+
+.overlay ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.overlay ul li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+.service-box img {
+    width: 50%; /* Reduce image size to 80% of the box width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 70px auto; /* Center the image within the box */
+    display: block;
+    background-color: white;
+}
+
+.service-box h3 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white; /* Set the heading color to white */
+    padding: 10px 0;
+    text-align: center; /* Centers the heading text */
+}
+
 
 .service-box .overlay {
     position: absolute;
@@ -373,14 +482,6 @@ margin-left:900px ;
     opacity: 1;
 }
 
-.service-box h3 {
-    margin: 0;
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #333;
-    padding: 10px 0;
-    text-align: center; /* Centers the heading text */
-}
 
 .service-box ul {
     list-style-type: disc;
@@ -404,11 +505,12 @@ margin-left:900px ;
 
 /*////////////////////////ABOUT PAGE////////////////////////*/
 
+
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 180px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -505,4 +607,33 @@ margin-left:900px ;
     .image-section img {
         max-width: 100%;
     }
+}
+
+
+/* Highlight effect for the contact form */
+.highlight-form {
+    border: 2px solid #add8e6; /* Light blue border */
+    background-color: #f0f8ff; /* Light blue background */
+    box-shadow: 0 0 15px rgba(173, 216, 230, 0.8); /* Glow effect */
+    transition: all 0.3s ease; /* Smooth transition for the effect */
+}
+
+/* Pulse animation for the contact form */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(173, 216, 230, 0.8);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(173, 216, 230, 1);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(173, 216, 230, 0.8);
+    }
+}
+
+.pulse-effect {
+    animation: pulse 1s ease-out; /* Pulse animation with 1 second duration */
 }
