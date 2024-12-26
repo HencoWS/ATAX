@@ -1,0 +1,1386 @@
+/* --------------------------------GENERAL STYLES-------------------------------- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: black;
+  padding: 30px 50px;
+  color: white;
+  position: relative;
+}
+
+/* Footer Container Grid */
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+  gap: 20px;
+  align-items: start;
+}
+
+/* Left Section: Contact and Logo */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+  font-size: 16px; /* Larger font */
+  font-weight: bold;
+}
+
+.footer-logo {
+  margin-top: 90px; /* Adds space between contact details and logo */
+}
+
+.footer-logo img {
+  width: 120px; /* Adjust size of the logo */
+}
+
+/* Middle Section: Newsletter */
+.footer-newsletter {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.footer-newsletter p {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: roboto;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+.footer-newsletter input {
+  width: 494px;
+  max-width: 494px;
+  height: 35px;
+  background: transparent;
+  border: 1px solid white;
+  outline: none;
+  color: white;
+  padding: 5px 10px;
+}
+
+/* Right Section: Links and Follow Us */
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 20px;
+}
+
+.footer-links {
+  margin-bottom: 70px; /* Adds space below the links */
+}
+
+.footer-links ul {
+  list-style: none;
+  text-align: left;
+}
+
+.footer-links li {
+  margin: 5px 0;
+  font-size: 16px; /* Increased size */
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+.footer-social p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem; /* Increased horizontal spacing */
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* Align nav links more to the right */
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem; /* Spacing between links */
+  margin-right: 9rem; /* Adjust spacing from the "Contact us" button */
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #59DFDC;
+}
+
+.contact-button .btn-contact {
+  background-color: #D9D9D9;
+  color: black;
+  text-decoration: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.contact-button .btn-contact:hover {
+  background-color: #59DFDC; /* Aqua hover effect */
+}
+
+.footer-social .social-icons a:hover {
+  color: #59DFDC;
+}
+
+/* --------------------------------GENERAL STYLES-------------------------------- */
+
+/* --------------------------------HOME PAGE-------------------------------- */
+
+/* Hero Section Styling */
+.hero-section {
+  background-image: url('images/hero.png'); 
+  background-size: cover;
+  background-position: center;
+  height: 90vh; /* Full height of viewport */
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Align items vertically */
+  justify-content: center; /* Center items vertically */
+  color: #000;
+  font-family: Arial, sans-serif;
+  position: relative; 
+}
+
+.hero-content {
+  text-align: left; /* Keep the text aligned to the left */
+}
+
+.hero-content h2 {
+  font-family: roboto;
+  font-weight: 400;
+  margin-left: 5%;
+  font-size: 48px;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+  color: #333; /* Subtle dark gray */
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-family: roboto;
+  font-weight: bolder;
+  margin-left: 20%;
+  line-height: 1.1;
+  color: #000;
+}
+
+#future {
+  margin-left: 33%;
+}
+
+.hero-buttons {
+  margin-top: 7rem;
+  margin-left: 17%;
+  display: flex;
+  gap: 2rem;
+}
+
+.btn-hero {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem 4rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #384B7C;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.btn-hero:hover {
+  background-color: #59DFDC;
+}
+
+
+/* WHAT WE DO Section Styling */
+
+.what-we-do {
+  background-image: url('images/whatwedo-back.png');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.section-tagline {
+  font-size: 24px;
+  font-family: Arimo;
+  font-weight: 400;
+  color:black;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family:roboto;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.section-title .highlight {
+  color: #8CFFC4; 
+  font-weight: 700;
+  font-family: roboto;
+}
+
+/* Container for what we do */
+.what-we-do-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.what-we-do-box {
+  background-color: #071624; 
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 365px;
+  height: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.what-we-do-box h3 {
+  font-size: 32px;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  font-family: roboto;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.what-we-do-box li{
+  font-family: arimo;
+  font-weight: 400;
+  font-size: 28px;
+  list-style-type: disc;
+  text-align: left;
+  text-align:left;
+}
+
+/* Learn More Button */
+
+.learn-more-button {
+  text-align: center; /* Centers the button horizontally */
+  margin-top: 2rem; /* Adds spacing above the button */
+}
+
+.btn-learn-more {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem 3rem; /* Adds padding for size */
+  font-size: 1rem;
+  font-weight: 700; /* Makes the text bold */
+  color: #000; /* Black text color */
+  background-color: #D9D9D9; /* Light gray background */
+  border: 2px solid #ccc; /* Slight border for the button */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.btn-learn-more:hover {
+  background-color: #333; /* Darker background on hover */
+  color: #fff; /* White text on hover */
+  border-color: #333; /* Darker border on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+
+/* About Us Section Styling */
+.about-us {
+  background-color:white;
+  padding: 3rem 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.about-us-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* Space between image and content */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.about-content {
+  background-color: #F1F1F1;
+  max-width: 600px;
+  color: black;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: -50px;
+  margin-right: -20px;
+
+}
+
+.about-content p {
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  font-family: arimo;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 28px;
+}
+
+/* Benefits Section Styling */
+.benefits-section {
+  background-image: url('images/benifits.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  position: relative; /* Ensure the section allows positioning of children */
+}
+
+.benefits-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.benefits-header .highlight {
+  color: #59DFDC; /* Aqua color for the word BENEFITS */
+}
+
+.benefits-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  position: relative;
+  z-index: 2; /* Ensure the content is on top of the background */
+}
+
+.benefit-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 22%; /* Adjust as needed */
+  position: relative;
+  z-index: 1; /* Ensure the content is on top of the dividers */
+}
+
+.benefit-icon {
+  width: 50px; /* Icon size */
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.benefit-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.benefit-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.benefit-item ul {
+  font-size: 1rem;
+  color: #ddd;
+  list-style-type: disc; 
+  padding: 0;
+}
+
+.benefit-item ul li {
+  margin-bottom: 0.5rem; 
+}
+
+/* Add dividers between the benefits */
+.benefit-divider {
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1; 
+}
+
+/* Placing the dividers at 23%, 49%, and 76% */
+.benefit-item:nth-child(1) .benefit-divider {
+  left: 104%; /* Divider between the first and second benefit */
+}
+
+.benefit-item:nth-child(2) .benefit-divider {
+  left: 105%; /* Divider between the second and third benefit */
+}
+
+.benefit-item:nth-child(3) .benefit-divider {
+  left: 106%; /* Divider between the third and fourth benefit */
+}
+
+/* Remove divider after the last item */
+.benefit-item:nth-child(4) .benefit-divider {
+  display: none;
+}
+
+/* Latest News Section */
+.news {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  background-image: url('images/latest-news-back.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.news h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.news-item {
+  background-color: #D9D9D9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 30%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.news-item p {
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.news-item a {
+  font-size: 0.9rem;
+  color: #00bebe;
+  text-decoration: none;
+}
+
+.news-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.news-item {
+  background-color: #fff; /* Optional background for better readability */
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+
+/* Partners Section */
+.partners {
+  background-color:white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.partners h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.partners img {
+  max-width: 1500px;
+  border-radius: 8px;
+}
+
+/* --------------------------------HOME PAGE-------------------------------- */
+
+/* --------------------------------ABOUT-US PAGE-------------------------------- */
+
+
+/* About Header Section */
+.about-header {
+  background-image: url('images/about-back.png'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #000;
+  padding: 250px 0;
+  position: relative;
+}
+
+.about-header h1 {
+  font-size: 128px;
+  font-weight: 900;
+  font-family: roboto;
+  display: inline-block;
+  position: relative;
+}
+
+.about-header h1::after {
+  content: ".";
+  color: #59DFDC;
+  font-size: 60px;
+  position: relative;
+}
+
+/* Who We Are Section */
+.who-we-are {
+  background-image: url('images/who-back.png');
+  background-size: cover;
+  background-position:center;
+  padding: 60px 20px;
+  background-color:white;
+  margin-bottom: 150px; ;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.who-text {
+  flex: 1;
+  width: 645px;
+  max-width: 645px;
+  height: 267px;
+  margin-left: 70px;
+  margin-right:0px;
+  margin-top: -100px;
+}
+
+.who-text h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: roboto;
+}
+
+.highlight-text {
+  color: #8CFFC4;
+}
+
+.who-text p {
+  font-size: 24px;
+  line-height: 1.5;
+  font-family:arimo;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.who-image {
+  flex: 1;
+  text-align: center;
+  margin-right: 100px;
+  margin-top: 100px;
+}
+
+.who-image img {
+  width: 600px;
+  height: 484px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Mission and Vision Section */
+.mission-vision {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 80px 20px;
+  background-image: url('images/missionvision-back.png');
+  background-size: cover;
+  background-position:center;
+  margin-right: 0px;
+  margin-top: -200px;
+  position: relative;
+}
+
+
+.mission, .vision {
+  flex: 1;
+  min-width: 300px;
+  background-color: #D9D9D9;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 2;
+}
+
+.mission h3, .vision h3 {
+  
+  font-size: 36px;
+  font-family: roboto;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.mission h3{
+  text-align: right;
+}
+
+.mission p, .vision p {
+  font-size: 24px;
+  text-align: justify;
+  line-height: 24px;
+  color: #333;
+  font-weight: 400;
+  font-family: arimo;
+}
+
+
+.mission{
+  margin-top: 20px;
+  min-width: 689px;
+  min-height: 337px;
+  margin-left: 50px;
+}
+
+.vision{
+  margin-top: 350px;
+  margin-right: 50px;
+  min-width: 709px;
+  min-height: 288px;
+}
+
+
+/* Values Section Styling */
+.values-section {
+  background-image: url('images/benifits.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.values-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.values-header .highlight {
+  color: #59DFDC; /* Aqua color for VALUES */
+}
+
+.values-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  position: relative;
+  z-index: 2; /* Ensure the content is on top of the background */
+}
+
+.value-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 22%; /* Adjust as needed */
+  position: relative;
+  z-index: 1; /* Ensure the content is on top of the dividers */
+}
+
+.value-icon {
+  width: 90px; /* Icon size */
+  height: 90px;
+  margin-bottom: 1rem;
+}
+
+.value-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.value-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.value-item p {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 1rem;
+}
+
+/* Add dividers between the values */
+.value-divider {
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1; /* Ensure dividers stay behind the content */
+}
+
+/* Placing the dividers at 23%, 49%, and 76% */
+.value-item:nth-child(1) .value-divider {
+  left: 104%; /* Divider between the first and second value */
+}
+
+.value-item:nth-child(2) .value-divider {
+  left: 105%; /* Divider between the second and third value */
+}
+
+.value-item:nth-child(3) .value-divider {
+  left: 106%; /* Divider between the third and fourth value */
+}
+
+/* Remove divider after the last item */
+.value-item:nth-child(4) .value-divider {
+  display: none;
+}
+
+
+/* --------------------------------ABOUT-US PAGE-------------------------------- */
+
+/* --------------------------------SERVICES PAGE-------------------------------- */
+
+/* HERO Section */
+
+
+.services-header {
+  background-image: url('images/services.png'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #000;
+  padding: 190px 0;
+  position: relative;
+}
+
+.services-header h1 {
+  font-size: 128px;
+  font-weight: 900;
+  font-family: roboto;
+  display: inline-block;
+  position: relative;
+}
+
+.services-header h1::after {
+  content: ".";
+  color: #59DFDC;
+  font-size: 60px;
+  position: relative;
+}
+
+/* Subheading */
+.services-p {
+  font-size: 24px;
+  font-family: arimo;
+  font-weight: 400;
+  color: black;
+  line-height: 24px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Services Section */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 100px; /* Adjust spacing between service boxes */
+  padding: 0 5%;
+}
+
+.service-box {
+  width: 340px;
+  height: 340px;
+  background-color: #D9D9D9;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Aligns content at the top */
+  text-align: center;
+  transition: transform 0.2s;
+  position: relative;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+.service-box img {
+  width: 200px;
+  height: 200px;
+  margin-top: 40px;
+}
+
+.service-box h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute; 
+  bottom: 15px; 
+  z-index: 2;
+  margin: 0;
+  text-align: center;
+  width: 100%; 
+}
+
+.service-box::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 0 12px 12px;
+  z-index: 1;
+}
+
+/* Centering the last box */
+.services .single-box {
+  width: 100%; 
+  display: flex;
+  justify-content: center; 
+}
+
+/* Contact Section */
+.contact-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.contact-section button {
+  background-color: #384B7C;
+  width: 308px;
+  height: 59.96px;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-section button:hover {
+  background-color: #00CEC9;
+}
+
+/* --------------------------------SERVICES PAGE-------------------------------- */
+
+/* --------------------------------CONTACT PAGE-------------------------------- */
+
+.contact-page {
+  padding: 2rem 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact-heading {
+  font-size: 64px;
+  font-weight: 900;
+  text-align: center;
+  position: relative;
+  font-family: roboto;
+}
+
+.contact-heading .dot {
+  color: #00CEC9;
+}
+
+/* Contact Container */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+}
+
+.contact-left{
+  flex: 1;
+  background-color: #D9D9D9A6;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section Styling */
+
+.contact-left{
+  height: 640px;
+}
+
+.contact-left p {
+  margin: 1rem 0;
+}
+
+.contact-info{
+  margin-top: 5px;
+  font-weight: 300;
+  font-family: roboto;
+  font-size: 24px;
+}
+
+.contact-left p strong {
+  display: block;
+  margin-bottom: -30px;
+  margin-top: 60px;
+  font-size: 24px;
+  font-family: roboto;
+  font-weight: 700;
+}
+
+.contact-left a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  font-family: roboto;
+  font-size: 24px;
+}
+
+.contact-left a:hover {
+  text-decoration: underline
+}
+
+.contact-left img:hover{
+  transform: scale(1.2); 
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.contact-left img {
+  margin-right: 50px;
+  border-radius: 5px; 
+}
+
+.facebook-img{
+  height: 70px;
+  width:auto;
+}
+
+.linkedin-img{
+  width: 70px;
+  height: 70px;
+}
+
+/* Contact Right Section Styling */
+.contact-right {
+  flex: 1;
+  padding: 2rem;
+  background-color: white; 
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: -50px;
+}
+
+
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; 
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center; 
+  gap: 0.5rem; 
+  font-size: 0.9rem;
+  color: #333; 
+}
+
+
+.checkbox-group input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #384B7C; 
+}
+
+
+.contact-right input {
+  padding: 0.75rem;
+  border: 1px solid black;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.headings{
+  font-family: roboto;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.contact-right button {
+  background-color: #384B7C; 
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-start; 
+}
+
+.contact-right button:hover {
+  background-color: #00CEC9; 
+}
+
+/* Adjustments for Form Layout */
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.contact-right input[type="text"],
+.contact-right input[type="email"] {
+  margin-top: -20px; 
+}
+
+.map-section{
+  padding: 0%;
+  margin-top: 100px;;
+}
+
+/* --------------------------------CONTACT PAGE-------------------------------- */
+
+/* --------------------------------RESPONSIVE STYLES-------------------------------- */
+
+/* Mobile (up to 768px) */
+@media screen and (max-width: 768px) {
+  /* General styles */
+  body {
+    font-size: 14px;
+  }
+
+  /* Header */
+  .header {
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: 36px;
+  }
+
+  /* About Section */
+  .about-header {
+    padding: 100px 0;
+  }
+
+  .about-header h1 {
+    font-size: 48px;
+  }
+
+  .who-we-are {
+    padding: 40px 20px;
+  }
+
+  .who-text {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .who-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .who-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .mission-vision {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .mission, .vision {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .values-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .value-item {
+    width: 100%;
+  }
+
+  .service-box {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .service-box img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .contact-page {
+    padding: 2rem 5%;
+  }
+
+  .contact-heading {
+    font-size: 48px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-left, .contact-right {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 20px;
+  }
+
+  .contact-left img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contact-right button {
+    width: 100%;
+  }
+
+  .contact-right input {
+    padding: 1rem;
+    font-size: 14px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px;
+  }
+}
+
+/* Tablet (up to 1024px) */
+@media screen and (max-width: 1024px) {
+  /* About Section */
+  .about-header {
+    padding: 150px 0;
+  }
+
+  .about-header h1 {
+    font-size: 80px;
+  }
+
+  .who-we-are {
+    padding: 50px 20px;
+  }
+
+  .who-text {
+    width: 50%;
+    margin-left: 0;
+  }
+
+  .who-image {
+    width: 50%;
+  }
+
+  .mission-vision {
+    flex-direction: column;
+  }
+
+  .mission, .vision {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .service-box {
+    width: 45%;
+    margin: 10px 0;
+  }
+
+  .contact-page {
+    padding: 2rem 10%;
+  }
+
+  .contact-heading {
+    font-size: 56px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-left, .contact-right {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 20px;
+  }
+
+  .contact-left img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .contact-right button {
+    width: 100%;
+  }
+}
+
+/* Large Desktop (up to 1200px) */
+@media screen and (max-width: 1200px) {
+  /* Header */
+  .header {
+    padding: 15px;
+  }
+
+  .header h1 {
+    font-size: 80px;
+  }
+
+  /* About Section */
+  .about-header {
+    padding: 200px 0;
+  }
+
+  .about-header h1 {
+    font-size: 100px;
+  }
+
+  .who-we-are {
+    padding: 60px 20px;
+  }
+
+  .who-text {
+    width: 55%;
+  }
+
+  .who-image {
+    width: 45%;
+  }
+
+  .service-box {
+    width: 30%;
+  }
+
+  .contact-page {
+    padding: 2rem 15%;
+  }
+
+  .contact-heading {
+    font-size: 64px;
+  }
+}
+
+/* --------------------------------RESPONSIVE STYLES-------------------------------- */
