@@ -41,35 +41,128 @@
   <!-- Services Section -->
   <section class="services">
     <div class="service-box">
-      <img src="images/accouting.png" alt="Accounting Services">
-      <h3>Accounting Services</h3>
+        <img src="images/accouting.png" alt="Accounting Services">
+        <div class="servicebox-heading">
+        <h3>Accounting Services</h3>
+        </div>
+        <div class="overlay">
+        <ul>
+            <li>Bookkeeping to Trial Balance</li>
+            <li>Bank Reconciliation</li>
+            <li>Accounts Payable</li>
+            <li>Accounts Receivable</li>
+            <li>Asset Register</li>
+            <li>Cloud Accounting Services</li>
+            <li>Financial Reporting</li>
+        </ul>
+        </div>
     </div>
-    <div class="service-box">
-      <img src="images/taxation.png" alt="Taxation & SARS">
-      <h3>Taxation & SARS</h3>
-    </div>
-    <div class="service-box">
-      <img src="images/registration.png" alt="Registration">
-      <h3>Registration</h3>
-    </div>
-    <div class="service-box">
-      <img src="images/payroll.png" alt="Payroll">
-      <h3>Payroll</h3>
-    </div>
-    <div class="service-box">
-      <img src="images/financial.png" alt="Financial Statements">
-      <h3>Financial Statements</h3>
-    </div>
-    <div class="service-box">
-      <img src="images/secreterial.png" alt="Secretarial">
-      <h3>Secretarial</h3>
-    </div>
-    <div class="service-box">
-      <img src="images/consulting.png" alt="Consulting">
-      <h3>Consulting</h3>
-    </div>
-  </section>
 
+    <div class="service-box">
+        <img src="images/taxation.png" alt="Taxation Image">
+        <div class="servicebox-heading">
+            <h3>Taxation & SARS Services</h3>
+        </div>
+        <div class="overlay">
+            <ul>
+                <li>IT 12 Submissions (Individuals).</li>
+                <li>IT 14 Submissions (Companies).</li>
+                <li>Income Tax Audits, Objections & Appeals.</li>
+                <li>Tax Directives.</li>
+                <li>Tax Clearance.</li>
+                <li>IRP6 (Provisional Tax).</li>
+                <li>VAT201 Submissions.</li>
+                <li>SARS Payment Arrangements.</li>
+                <li>EMP201 Submissions.</li>
+                <li>EMP501 Submissions (Bi-Annually).</li>
+                <li>Liaison with SARS.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="service-box">
+        <img src="images/registration.png" alt="Registration Image">
+        <div class="servicebox-heading">
+            <h3>Registration Services</h3>
+        </div>
+        <div class="overlay">
+            <ul>
+                <li>Income Tax.</li>
+                <li>VAT.</li>
+                <li>PAYE.</li>
+                <li>UIF (Unfiling).</li>
+                <li>Import & Export.</li>
+                <li>WCA/COIDA.</li>
+                <li>NCR.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="service-box">
+        <img src="images/payroll.png" alt="Payroll Image">
+        <div class="servicebox-heading">
+            <h3>Payroll Services</h3>
+        </div>
+        <div class="overlay">
+            <ul>
+                <li>Weekly/Fortnight/Monthly Payroll Administration.</li>
+                <li>Annual WCA Submissions.</li>
+                <li>UIF Declarations.</li>
+                <li>Complete Payroll Management.</li>
+                <li>Issuing IRP5's.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="service-box">
+        <img src="images/financial.png" alt="Financial Image">
+        <div class="servicebox-heading">
+            <h3>Financial Statements</h3>
+        </div>
+        <div class="overlay">
+            <ul>
+                <li>Compilation of Management Statements.</li>
+                <li>Compilation of Annual Financial Statements.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="service-box">
+        <img src="images/secreterial.png" alt="Secretarial Image">
+        <div class="servicebox-heading">
+            <h3>Secretarial Services</h3>
+        </div>
+        <div class="overlay">
+            <ul>
+                <li>Company Registrations.</li>
+                <li>CIPC Annual Returns.</li>
+                <li>Beneficial Ownership.</li>
+                <li>Issuing & Transferring Shares.</li>
+                <li>Share Certificates.</li>
+                <li>Company Structuring.</li>
+                <li>Company Name Changes.</li>
+                <li>Director Amendments.</li>
+                <li>Shareholders and Directors Resolutions.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="service-box">
+        <img src="images/consulting.png" alt="Consulting Image">
+        <div class="servicebox-heading">
+            <h3>Consulting Services</h3>
+        </div>
+        <div class="overlay">
+            <ul>
+                <li>Business Start-ups.</li>
+                <li>Loan Applications.</li>
+                <li>Business Valuations.</li>
+            </ul>
+        </div>
+    </div>
+    
+
+</section>
   <!-- Contact Us Button -->
   <div class="contact-section">
     <a href="contact-us.html" class="btn-hero">CONTACT US</a>
@@ -100,7 +193,16 @@
       <!-- Middle Section -->
       <div class="footer-newsletter">
         <p>Subscribe to our Newsletter</p>
-        <input type="text" placeholder="">
+        <form id="newsletter-form" onsubmit="sendNewsletter(event)">
+          <input
+            type="email"
+            id="newsletter-email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit">Subscribe</button>
+        </form>
       </div>
   
       <!-- Right Section -->
