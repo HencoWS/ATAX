@@ -27,9 +27,10 @@ body {
 
 
 html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
+  width: 1024px; /* Fixed website width */
+  margin: 0 auto; /* Center horizontally */
+  overflow-x: auto; /* Allow horizontal scrolling */
+  overflow-y: auto; /* Allow vertical scrolling */
 }
 
 
@@ -40,6 +41,21 @@ html, body {
   overflow-x: scroll; /* Ensures horizontal scrolling is enabled */
   padding: 0;
   width: 100%;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  overflow: hidden; /* Prevent unintended overflow */
+}
+
+button, h1, h2, h3, p {
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.hero-section, .footer {
+  max-width: 1024px;
 }
 
 
@@ -1309,141 +1325,4 @@ footer {
   border: 0; /* Removes border */
 }
 
-/* --------------------------------CONTACT PAGE-------------------------------- */
 
-/* General Zoom-Out Effect for Smaller Screens (No Layout Changes) */
-@media (max-width: 768px) {
-  body {
-    transform: scale(0.8); /* Apply zoom-out effect */
-    transform-origin: top left; /* Keep content anchored to the top-left corner */
-    width: 150%; /* Increase the effective width for horizontal scrolling */
-    overflow-x: scroll; /* Enable horizontal scrolling */
-  }
-
-  .partners img{
-    width: 1024px;
-  }
-}
-
-/* Zoom-Out for Even Smaller Screens (Mobile Portrait) */
-@media (max-width: 480px) {
-  body {
-    transform: scale(0.7); /* Further zoom-out for smaller devices */
-    transform-origin: top left; /* Ensure alignment remains consistent */
-    width: 140%; /* Expand effective width for proportional scaling */
-    overflow-x: scroll; /* Maintain horizontal scrolling */
-  }
-}
-
-
-/* General Zoom-Out Effect */
-@media (max-width: 1024px) {
-  body {
-    transform: scale(0.5); /* Zoom out effect */
-    transform-origin: top left; /* Maintain top-left alignment */
-    width: 250%; /* Expand effective width */
-    overflow-x: scroll; /* Ensure horizontal scrolling */
-    height: calc(100vh / 0.3); /* Adjust height to scaled content */
-  }
-  
-  .hero-section::before{
-    width:180vh;
-  }
-
-  .hero-content h1 {
-    margin-left: 200px;
-  }
-  
-  #future {
-    margin-left: 257px;
-  }
-
-  .benefit-item:nth-child(1) .benefit-divider {
-    left: 275px; 
-  }
-  
-  .benefit-item:nth-child(2) .benefit-divider {
-    left: 275px; 
-  }
-  
-  .benefit-item:nth-child(3) .benefit-divider {
-    left: 275px;
-  }
-  
-  /* Remove divider after the last item */
-  .benefit-item:nth-child(4) .benefit-divider {
-    display: none;
-  }
-
-  .news-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1.5rem;
-  }
-  
-  .partners img{
-    width: 1024px;
-  }
-
-  .map-section{
-    width: 100%;
-  }
-
-  .mission-vision{
-    max-width: 1024px;
-    gap: 0px;
-    margin-bottom: -300px;
-  }
-
-  .mission{
-    margin-left: 0px;
-  }
-  
-  .vision{
-    margin: 400px;
-    margin-left: -220px;
-  }
-  
-  .who-image {
-    margin-left: 70px;
-  }
-  
-
-  .container {
-    width: 1024px; /* Keep container width fixed */
-  }
-
-  .footer-container {
-    grid-template-columns: repeat(3, 1fr); /* Prevent column stacking */
-    gap: 20px; /* Retain original gap */
-  }
-
-  .what-we-do-container {
-    flex-wrap: nowrap; /* Prevent wrapping */
-    justify-content: space-between; /* Ensure spacing remains consistent */
-  }
-
-  .hero-content h2, .hero-content h1 {
-    font-size: inherit; /* Retain original sizes */
-  }
-}
-
-/* For Smaller Devices */
-@media (max-width: 480px) {
-  body {
-    transform: scale(0.7); /* More zoom-out */
-    transform-origin: top left;
-    width: 140%; /* Expand effective width */
-    overflow-x: scroll;
-  }
-
-  .footer-container, .what-we-do-container {
-    flex-wrap: nowrap; /* Prevent wrapping */
-    gap: inherit; /* Keep original spacing */
-  }
-
-  .header, .nav {
-    flex-wrap: nowrap;
-  }
-}
