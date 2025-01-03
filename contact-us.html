@@ -82,27 +82,28 @@
       </div>
     </div>
 
-    <!-- Map Section -->
-    <section class="map-section">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1746.970204561972!2d28.255517850201755!3d-25.861748630605867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9567b27770a4cf%3A0xf0de09798c1a4709!2sRoute%2021%20Corporate%20Park%2C%2012%20Victoria%20Link%2C%20Route%2021%20Business%20Park%2C%20Centurion%2C%200157!5e0!3m2!1sen!2sza!4v1734781448278!5m2!1sen!2sza" 
-      width="1510" 
-      height="399" 
+  </main>
+
+  <!-- Map Section -->
+  <section class="map-section">
+    <iframe 
+      class="map-iframe" 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1746.970204561972!2d28.255517850201755!3d-25.861748630605867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9567b27770a4cf%3A0xf0de09798c1a4709!2sRoute%2021%20Corporate%20Park%2C%2012%20Victoria%20Link%2C%20Route%2021%20Business%20Park%2C%20Centurion%2C%200157!5e0!3m2!1sen!2sza!4v1734781448278!5m2!1sen!2sza" 
       style="border:0;" 
       allowfullscreen="" 
       loading="lazy" 
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
-    </section>
-
-    <!-- Partners Section -->
-  <section class="partners">
-    <h2>Our Partners/Affiliates</h2>
-    <div class="partners-container">
-      <img src="images/partner.png" alt="Partner Logo">
-    </div>
   </section>
 
-  </main>
+  <!-- Partners Section -->
+<section class="partners">
+  <h2>Our Partners/Affiliates</h2>
+  <div class="partners-container">
+    <img src="images/partner.png" alt="Partner Logo">
+  </div>
+</section>
+
 <!--Footer Section-->
 <footer>
   <div class="footer-container">
@@ -120,7 +121,16 @@
     <!-- Middle Section -->
     <div class="footer-newsletter">
       <p>Subscribe to our Newsletter</p>
-      <input type="text" placeholder="">
+      <form id="newsletter-form" onsubmit="sendNewsletter(event)">
+        <input
+          type="email"
+          id="newsletter-email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <button type="submit">Subscribe</button>
+      </form>
     </div>
 
     <!-- Right Section -->
