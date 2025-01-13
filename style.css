@@ -20,31 +20,21 @@ img, video {
 body {
   overflow-x: scroll; /* Allow horizontal scrolling if needed */
   overflow-y: auto; /* Enable vertical scrolling */
-  width: 1024px; /* Fixed width for the website */
+  width: 100%; /* Fixed width for the website */
   margin: 0 auto; /* Center the content */
   font-family: roboto;
 }
 
 
 html, body {
-  width: 1024px; /* Fixed website width */
+  width:100%; /* Fixed website width */
   margin: 0 auto; /* Center horizontally */
   overflow-x: auto; /* Allow horizontal scrolling */
   overflow-y: auto; /* Allow vertical scrolling */
 }
 
-
-
-html, body {
-  width: 1024px; /* Matches the viewport */
-  margin: 0 auto; /* Centers the content on wider screens */
-  overflow-x: scroll; /* Ensures horizontal scrolling is enabled */
-  padding: 0;
-  width: 100%;
-}
-
 .container {
-  max-width: 1024px;
+  max-width: 100%;
   margin: 0 auto;
   overflow: hidden; /* Prevent unintended overflow */
 }
@@ -55,7 +45,7 @@ button, h1, h2, h3, p {
 }
 
 .hero-section, .footer {
-  max-width: 1024px;
+  max-width: 100% ;
 }
 
 
@@ -90,11 +80,11 @@ footer {
 }
 
 .footer-logo {
-  margin-top: 90px; /* Adds space between contact details and logo */
+  margin-top: 20%; /* Adds space between contact details and logo */
 }
 
 .footer-logo img {
-  width: 120px; /* Adjust size of the logo */
+  width: 30%; /* Adjust size of the logo */
 }
 
 .footer-newsletter button {
@@ -112,7 +102,7 @@ footer {
 /* Middle Section: Newsletter */
 .footer-newsletter {
   text-align: center;
-  margin-top: 70px;
+  margin-top: 10%;
 }
 
 .footer-newsletter p {
@@ -120,13 +110,13 @@ footer {
   font-weight: 400;
   font-family: roboto;
   letter-spacing: 4px;
-  margin-bottom: 18px;
+  margin-bottom: 5%;
   font-weight: bold;
 }
 
 .footer-newsletter input {
-  width: 494px;
-  max-width: 494px;
+  width: 100%;
+  max-width: 100%;
   height: 35px;
   background: transparent;
   border: 1px solid white;
@@ -140,11 +130,11 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-right: 20px;
+  margin-right: 10%;
 }
 
 .footer-links {
-  margin-bottom: 70px; /* Adds space below the links */
+  margin-bottom: 20%; /* Adds space below the links */
 }
 
 .footer-links ul {
@@ -170,14 +160,14 @@ footer {
 
 .footer-social p {
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 10%;
   font-weight: bold;
 }
 
 .social-icons a {
   color: white;
   font-size: 20px;
-  margin-left: 10px;
+  margin-left: 10%;
   text-decoration: none;
   display: inline-block;
 }
@@ -254,13 +244,14 @@ footer {
 .hero-section {
   background-size: cover;
   background-position: center;
-  height: 86vh; 
+  height: 50rem; 
   display: flex; 
   flex-direction: column; 
   justify-content: center; 
   color: #000;
   font-family: roboto;
   position: relative; 
+  margin-bottom: -10%;
 }
 
 .hero-section::before {
@@ -268,8 +259,8 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
-  width: 218.5vh;
-  height: 86vh;
+  width: 100%;
+  height: 40rem;
   background-image: url('images/hero.png');
   background-size: cover;
   background-position: center;
@@ -281,12 +272,13 @@ footer {
   text-align: left; 
   position: relative; 
   z-index: 1;
+  margin-bottom: 10%;
 }
 
 .hero-content h2 {
   font-family: roboto;
   font-weight: 400;
-  margin-left: 90px;
+  margin-left: 9%;
   font-size: 48px;
   margin-bottom: 0.5rem;
   line-height: 1.1;
@@ -297,18 +289,18 @@ footer {
   font-size: 4rem;
   font-family: roboto;
   font-weight: bolder;
-  margin-left: 350px;
+  margin-left: 25%;
   line-height: 1.1;
   color: #000;
 }
 
 #future {
-  margin-left: 600px;
+  margin-left: 42%;
 }
 
 .hero-buttons {
   margin-top: 7rem;
-  margin-left: 250px;
+  margin-left: 20%;
   display: flex;
   gap: 2rem;
 }
@@ -447,25 +439,23 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 2rem; /* Space between image and content */
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .about-image img {
-  width: 218.5vh;
+  width: 100.5vh;
   border-radius: 10px; /* Rounded corners */
 }
 
 .about-content {
   background-color: #F1F1F1;
-  max-width: 600px;
+  width: 50%;
   color: black;
   font-size: 1rem;
   font-family: roboto;
   line-height: 1.6;
-  margin-bottom: -50px;
   margin-right: -20px;
-
 }
 
 .about-content p {
@@ -517,14 +507,14 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 450px; /* Adjust as needed */
+  width: 20%; /* Adjust as needed */
   position: relative;
   z-index: 1; /* Ensure the content is on top of the dividers */
 }
 
 .benefit-icon {
-  width: 50px; /* Icon size */
-  height: 50px;
+  width: 20%; /* Icon size */
+  height: 20%;
   margin-bottom: 1rem;
 }
 
@@ -554,7 +544,6 @@ footer {
 
 /* Add dividers between the benefits */
 .benefit-divider {
-  width: 1px;
   height: 250px;
   background-color: #fff;
   position: absolute;
@@ -565,15 +554,18 @@ footer {
 
 /* Placing the dividers*/
 .benefit-item:nth-child(1) .benefit-divider {
-  left: 340px; 
+  left: 112%; 
+  width: 1px;
 }
 
 .benefit-item:nth-child(2) .benefit-divider {
-  left: 340px; 
+  left: 112%; 
+  width: 2px;
 }
 
 .benefit-item:nth-child(3) .benefit-divider {
-  left:340px;
+  left:112%;
+  width: 2px;
 }
 
 /* Remove divider after the last item */
@@ -584,7 +576,7 @@ footer {
 /* Latest News Section */
 .news {
   padding: 2rem;
-  max-width: 1500px;
+  max-width: 100%;
   background-color: #f9f9f9;
   background-image: url('images/latest-news-back.png');
   background-size: cover;
@@ -663,7 +655,7 @@ footer {
 }
 
 .partners img {
-  max-width: 1500px;
+  max-width:100%;
   border-radius: 8px;
 }
 
@@ -720,7 +712,7 @@ footer {
   background-position:center;
   padding: 0px 20px;
   background-color:white;
-  margin-bottom: 200px; 
+  margin-bottom: 15%; 
   margin-top: -0px;
   z-index: -5;
 }
@@ -735,7 +727,6 @@ footer {
 .who-text {
   flex: 1;
   width: 645px;
-  max-width: 645px;
   height: 267px;
   margin-left: 70px;
   margin-right:0px;
@@ -795,7 +786,7 @@ footer {
 
 .mission, .vision {
   flex: 1;
-  min-width: 300px;
+  width: 300px;
   background-color: #D9D9D9;
   padding: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
@@ -829,16 +820,16 @@ footer {
 
 .mission{
   margin-top: 20px;
-  min-width: 689px;
-  min-height: 337px;
+  width: 689px;
+  height: 337px;
   margin-left: 50px;
 }
 
 .vision{
   margin-top: 350px;
   margin-right: 50px;
-  min-width: 709px;
-  min-height: 288px;
+  width: 709px;
+  height: 288px;
 }
 
 
@@ -1320,9 +1311,275 @@ footer {
 .map-iframe {
   width: 100%; /* Takes the full width of its container */
   height: 400px; /* Default height */
-  max-width: 1510px; /* Optional max width for larger screens */
+  width: 1510px; /* Optional max width for larger screens */
   margin: 0 auto; /* Centers the iframe within the container */
   border: 0; /* Removes border */
 }
 
+/*----------------------------------RESPONSIVE WEB DESIGNS----------------------------------*/
 
+
+@media (max-width: 480px) {
+  /* Header Styling */
+  .header {
+    flex-direction: column; /* Stack header items vertically */
+    align-items: center; /* Center items */
+    padding: 1rem; /* Adjust padding */
+  }
+
+  .logo {
+    font-size: 2rem; /* Smaller logo size */
+    align-items: center;
+  }
+
+  .nav {
+    margin-top: 1rem; /* Space between logo and nav */
+  }
+
+  .nav ul {
+    flex-direction:row; 
+    align-items: center; /* Center navigation items */
+    gap: 0.8rem; /* Space between links */
+  }
+
+  .nav ul li a {
+    font-size: 18px; /* Smaller font size for links */
+  }
+
+  .contact-button .btn-contact {
+    font-size: 18px; /* Smaller contact button */
+    padding: 0.1rem 1rem; /* Adjust padding */
+  }
+
+  /* Hero Section Styling */
+  .hero-section {
+    height: auto; /* Allow height to adjust */
+    padding: 2rem 1rem; /* Add padding */
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem; /* Smaller font size */
+    margin-left: 0; /* Remove left margin */
+    text-align: center; /* Center text */
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem; /* Smaller font size */
+    margin-left: 0; /* Remove left margin */
+    text-align: center; /* Center text */
+  }
+
+  .hero-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .btn-hero {
+    padding: 0.5rem 2rem; /* Adjust button size */
+    font-size: 1rem; /* Smaller font size */
+  }
+
+  /* What We Do Section */
+  .what-we-do-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    gap: 1.5rem; /* Space between items */
+  }
+
+  .what-we-do-box {
+    width: 90%; /* Full width on small screens */
+    margin: 0 auto; /* Center the box */
+  }
+
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full screen width */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .about-us-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width */
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-content {
+    width: 100%; /* Force full width */
+    margin: 0 auto; /* Remove any additional margins */
+    padding: 1rem; /* Optional: Add internal padding for spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-align: center; /* Center-align the text */
+  }
+
+  .about-content p {
+    font-size: 1rem; /* Adjust font size */
+    line-height: 1.6; /* Improve readability */
+    margin: 0 0 1rem; /* Space between paragraphs */
+  }
+
+  /* Benefits Section */
+  .benefits-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    gap: 1.5rem; /* Space between items */
+  }
+
+  .benefit-item {
+    width: 90%; /* Full width on small screens */
+  }
+  .benefit-divider{
+    display: none;
+  }
+
+  /* Latest News Section */
+  .news-container {
+    flex-direction: column; /* Stack news items vertically */
+    align-items: center; /* Center items */
+    gap: 1.5rem; /* Space between items */
+  }
+
+  .news-item {
+    width: 90%; /* Full width on small screens */
+  }
+
+  /* Partners Section */
+  .partners img {
+    width: 100%; /* Scale down images */
+  }
+
+  /* Footer Styling */
+  .footer-container {
+    grid-template-columns: 1fr; /* Stack footer sections */
+  }
+
+  .footer-left, .footer-right {
+    align-items: center; /* Center footer items */
+    text-align: center; /* Center text */
+  }
+
+  .footer-logo img {
+    width: 50%; /* Scale down the logo */
+  }
+
+  /* ----------------------------------ABOUT PAGE ---------------------------------- */
+
+  .about-header{
+    height: auto; /* Allow height to adjust */
+    padding: 3.5rem 1rem; 
+    margin-bottom:10%;
+  }
+
+  .about-header h1{
+    font-size: 2.5rem; /* Smaller font size */
+    margin-left: 0; /* Remove left margin */
+    text-align: center; /* Center text */
+  }
+
+
+  .contact-container{
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    gap: 1.5rem; /* Space between items */
+  }
+
+  .who-we-are {
+    margin-top: 20%;
+    text-align: left; /* Center text for mobile */
+    margin-left: -10%;
+    width: 90%;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+  }
+
+  .who-text {
+    width: 90%; /* Full width for text */
+    margin: 0; /* Remove margin */
+    align-items: center;
+  }
+
+  .who-text h2 {
+    font-size: 24px; /* Adjust heading size for mobile */
+    margin-bottom: 0.5rem; /* Space below heading */
+  }
+
+  .who-text p {
+    font-size: 16px; /* Adjust paragraph size for mobile */
+    line-height: 1.5; /* Improve readability */
+    margin: 0; /* Remove margin */
+  
+  }
+
+  .who-image {
+    width: 105%; /* Full width for image container */
+    margin-top: 1rem; /* Space above image */
+  }
+
+  .who-image img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    margin-bottom: 50%;
+    align-items: center;
+    margin-left: 16%;
+  }
+
+  .mission-vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensure the section doesn't exceed the screen width */
+    padding: 0 15px; /* Add padding to prevent content from touching the edges */
+    box-sizing: border-box;
+    gap: 10%;
+    margin-bottom: 10%;
+  }
+
+  .mission-vision .mission,
+  .mission-vision .vision {
+    width: 100%; /* Make the boxes 100% of the container */
+    max-width: 90%; /* Prevent them from being too wide */
+    margin: 10px auto; /* Center them and add vertical spacing */
+    padding: 20px; /* Adjust padding for readability */
+    box-sizing: border-box; /* Ensure padding doesn’t increase width */
+  }
+
+  .mission-vision .mission h3,
+  .mission-vision .vision h3 {
+    font-size: 20px; /* Reduce the heading font size */
+    text-align: center; /* Center align the heading */
+  }
+
+  .mission-vision .mission p,
+  .mission-vision .vision p {
+    font-size: 15px; /* Reduce the heading font size */
+    text-align: center; /* Center align the heading */
+  }
+  /* Benefits Section */
+  .values-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    gap: 1.5rem; /* Space between items */
+  }
+
+  .value-item {
+    width: 90%; /* Full width on small screens */
+  }
+  .value-divider{
+    display: none;
+  }
+
+}
+
+/* ----------------------------------ABOUT PAGE---------------------------------- */
+
+/*----------------------------------RESPONSIVE WEB DESIGNS----------------------------------*/
