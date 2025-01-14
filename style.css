@@ -174,6 +174,7 @@ footer {
 
 
 /* Header Styling */
+/* Header Styling for Larger Screens (Unchanged) */
 .header {
   display: flex;
   justify-content: space-between;
@@ -228,9 +229,12 @@ footer {
   transition: background-color 0.3s ease;
 }
 
+
+
 .contact-button .btn-contact:hover {
   background-color: #59DFDC; /* Aqua hover effect */
 }
+
 
 .footer-social .social-icons a:hover {
   color: #59DFDC;
@@ -951,7 +955,7 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
-  height: 86vh;
+  height: 110%;
   background-image: url('images/services.png');
   background-size: cover;
   background-position: center;
@@ -1303,7 +1307,7 @@ footer {
 }
 
 .map-section{
-  width:1510px;
+  width:100%;
   padding: 0px;
   margin-top: 0px;;
 }
@@ -1322,33 +1326,40 @@ footer {
 @media (max-width: 480px) {
   /* Header Styling */
   .header {
-    flex-direction: column; /* Stack header items vertically */
-    align-items: center; /* Center items */
-    padding: 1rem; /* Adjust padding */
+    flex-direction: column;
+    align-items: center; /* Center the header items */
+    padding: 1rem; /* Reduce padding for smaller screens */
   }
 
   .logo {
-    font-size: 2rem; /* Smaller logo size */
-    align-items: center;
+    margin-bottom: 1rem;
   }
 
   .nav {
-    margin-top: 1rem; /* Space between logo and nav */
+    flex: none; /* Reset flex property */
+    width: 100%; /* Make navigation full-width */
+    justify-content: center;
   }
 
   .nav ul {
-    flex-direction:row; 
-    align-items: center; /* Center navigation items */
-    gap: 0.8rem; /* Space between links */
+    display: flex;
+    justify-content: center; /* Center links */
+    gap: 1.5rem; /* Adjust gap for smaller screens */
+    margin: 0; /* Remove margin to avoid unnecessary spacing */
   }
 
   .nav ul li a {
-    font-size: 18px; /* Smaller font size for links */
+    white-space: nowrap; /* Prevent "About us" from breaking into two lines */
   }
 
-  .contact-button .btn-contact {
-    font-size: 18px; /* Smaller contact button */
-    padding: 0.1rem 1rem; /* Adjust padding */
+  .contact-button {
+    margin-top: 1rem; /* Add spacing above the button for small screens */
+    margin-bottom: 5%;
+  }
+
+  .btn-contact {
+    padding: 0.5rem 1rem;
+    font-size: 18px; /* Adjust font size for smaller screens */
   }
 
   /* Hero Section Styling */
@@ -1578,8 +1589,50 @@ footer {
     display: none;
   }
 
+  /* ----------------------------------ABOUT PAGE---------------------------------- */
+
+  /* ----------------------------------SERVICE PAGE---------------------------------- */
+
+  .services-header{
+    height: 10%; /* Allow height to adjust */
+    padding: 3.5rem 1rem; 
+    margin-bottom:10%;
+  }
+  
+  .services-header h1{
+    font-size: 2.5rem; /* Smaller font size */
+    margin-left: 0; /* Remove left margin */
+    text-align: center; /* Center text */
+  }
+
+  .services-header img{
+    width: 90%;
+    height: 10%;
+  }
+
+  .services-p{
+    font-size: 16px;
+    margin-bottom: 1%;
+  }
+
+/* ----------------------------------SERVICE PAGE---------------------------------- */
+
+/* ----------------------------------CONTACT PAGE---------------------------------- */
+
+.contact-right{
+  margin-top: 10%;
+  width: 90%;
 }
 
-/* ----------------------------------ABOUT PAGE---------------------------------- */
+.map-iframe{
+  width: 100%;
+}
+
+
+/* ----------------------------------CONTACT PAGE---------------------------------- */
+
+}
+
+
 
 /*----------------------------------RESPONSIVE WEB DESIGNS----------------------------------*/
