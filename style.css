@@ -1325,6 +1325,10 @@ footer {
 
 @media (max-width: 480px) {
   /* Header Styling */
+.body{
+    font-family: roboto;
+  }
+  
   .header {
     flex-direction: column;
     align-items: center; /* Center the header items */
