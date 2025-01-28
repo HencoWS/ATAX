@@ -1,0 +1,1655 @@
+/* --------------------------------GENERAL STYLES-------------------------------- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 0;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+
+body {
+  overflow-x: scroll; /* Allow horizontal scrolling if needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  width: 100%; /* Fixed width for the website */
+  margin: 0 auto; /* Center the content */
+  font-family: roboto;
+}
+
+
+html, body {
+  width:100%; /* Fixed website width */
+  margin: 0 auto; /* Center horizontally */
+  overflow-x: auto; /* Allow horizontal scrolling */
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden; /* Prevent unintended overflow */
+}
+
+button, h1, h2, h3, p {
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.hero-section, .footer {
+  max-width: 100% ;
+}
+
+
+/* Footer Styling */
+footer {
+  background-color: black;
+  padding: 30px 50px;
+  color: white;
+  position: relative;
+}
+
+/* Footer Container Grid */
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+  gap: 20px;
+  align-items: start;
+}
+
+/* Left Section: Contact and Logo */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+  font-size: 16px; /* Larger font */
+  font-weight: bold;
+}
+
+.footer-logo {
+  margin-top: 20%; /* Adds space between contact details and logo */
+}
+
+.footer-logo img {
+  width: 30%; /* Adjust size of the logo */
+}
+
+.footer-newsletter button {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+
+/* Middle Section: Newsletter */
+.footer-newsletter {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.footer-newsletter p {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: roboto;
+  letter-spacing: 4px;
+  margin-bottom: 5%;
+  font-weight: bold;
+}
+
+.footer-newsletter input {
+  width: 100%;
+  max-width: 100%;
+  height: 35px;
+  background: transparent;
+  border: 1px solid white;
+  outline: none;
+  color: white;
+  padding: 5px 10px;
+}
+
+/* Right Section: Links and Follow Us */
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 10%;
+}
+
+.footer-links {
+  margin-bottom: 20%; /* Adds space below the links */
+}
+
+.footer-links ul {
+  list-style: none;
+  text-align: left;
+}
+
+.footer-links li {
+  margin: 5px 0;
+  font-size: 16px; /* Increased size */
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+.footer-social p {
+  font-size: 16px;
+  margin-bottom: 10%;
+  font-weight: bold;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  margin-left: 10%;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+/* Header Styling */
+/* Header Styling for Larger Screens (Unchanged) */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem; /* Increased horizontal spacing */
+  background-color: #fff;
+  font-family: roboto;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* Align nav links more to the right */
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem; /* Spacing between links */
+  margin-right: 9rem; /* Adjust spacing from the "Contact us" button */
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #59DFDC;
+}
+
+.contact-button .btn-contact {
+  background-color: #D9D9D9;
+  color: black;
+  text-decoration: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+
+
+.contact-button .btn-contact:hover {
+  background-color: #59DFDC; /* Aqua hover effect */
+}
+
+
+.footer-social .social-icons a:hover {
+  color: #59DFDC;
+}
+
+/* --------------------------------GENERAL STYLES-------------------------------- */
+
+/* --------------------------------HOME PAGE-------------------------------- */
+
+/* Hero Section Styling */
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  height: 50rem; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  color: #000;
+  font-family: roboto;
+  position: relative; 
+  margin-bottom: -10%;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40rem;
+  background-image: url('images/hero.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.65; 
+  z-index: -1; 
+}
+
+.hero-content {
+  text-align: left; 
+  position: relative; 
+  z-index: 1;
+  margin-bottom: 10%;
+}
+
+.hero-content h2 {
+  font-family: roboto;
+  font-weight: 400;
+  margin-left: 9%;
+  font-size: 48px;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+  color: #333; 
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-family: roboto;
+  font-weight: bolder;
+  margin-left: 25%;
+  line-height: 1.1;
+  color: #000;
+}
+
+#future {
+  margin-left: 42%;
+}
+
+.hero-buttons {
+  margin-top: 7rem;
+  margin-left: 20%;
+  display: flex;
+  gap: 2rem;
+}
+
+.btn-hero {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem 4rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: roboto;
+  color: #fff;
+  background-color: #384B7C;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.btn-hero:hover {
+  background-color: #59DFDC;
+}
+
+
+/* WHAT WE DO Section Styling */
+
+.what-we-do {
+  background-image: url('images/whatwedo-back.png');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.section-tagline {
+  font-size: 24px;
+  font-family: roboto;
+  font-weight: 400;
+  color:black;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family:roboto;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.section-title .highlight {
+  color: #8CFFC4; 
+  font-weight: 700;
+  font-family: roboto;
+}
+
+/* Container for what we do */
+.what-we-do-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.what-we-do-box {
+  background-color: #071624; 
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 365px;
+  height: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.what-we-do-box h3 {
+  font-size: 32px;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  font-family: roboto;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.what-we-do-box li{
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 28px;
+  list-style-type: disc;
+  text-align: left;
+  text-align:left;
+}
+
+/* Learn More Button */
+
+.learn-more-button {
+  text-align: center; /* Centers the button horizontally */
+  margin-top: 2rem; /* Adds spacing above the button */
+}
+
+.btn-learn-more {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem 3rem; /* Adds padding for size */
+  font-size: 1rem;
+  font-family: roboto;
+  font-weight: 700; /* Makes the text bold */
+  color: #000; /* Black text color */
+  background-color: #D9D9D9; /* Light gray background */
+  border: 2px solid #ccc; /* Slight border for the button */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.btn-learn-more:hover {
+  background-color: #333; /* Darker background on hover */
+  color: #fff; /* White text on hover */
+  border-color: #333; /* Darker border on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+
+/* About Us Section Styling */
+.about-us {
+  background-color:white;
+  padding: 3rem 1rem;
+  font-family: roboto;
+}
+
+.about-us-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* Space between image and content */
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.about-image img {
+  width: 100.5vh;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.about-content {
+  background-color: #F1F1F1;
+  width: 50%;
+  color: black;
+  font-size: 1rem;
+  font-family: roboto;
+  line-height: 1.6;
+  margin-right: -20px;
+}
+
+.about-content p {
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 28px;
+}
+
+/* Benefits Section Styling */
+.benefits-section {
+  background-image: url('images/benifits.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  color: #fff;
+  font-family: roboto;
+  position: relative; /* Ensure the section allows positioning of children */
+}
+
+.benefits-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: roboto;
+}
+
+.benefits-header .highlight {
+  color: #59DFDC; /* Aqua color for the word BENEFITS */
+}
+
+.benefits-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  position: relative;
+  z-index: 2; /* Ensure the content is on top of the background */
+}
+
+.benefit-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 20%; /* Adjust as needed */
+  position: relative;
+  z-index: 1; /* Ensure the content is on top of the dividers */
+}
+
+.benefit-icon {
+  width: 20%; /* Icon size */
+  height: 20%;
+  margin-bottom: 1rem;
+}
+
+.benefit-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.benefit-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-family: roboto;
+}
+
+.benefit-item ul {
+  font-size: 1rem;
+  color: #ddd;
+  list-style-type: disc; 
+  padding: 0;
+}
+
+.benefit-item ul li {
+  margin-bottom: 0.5rem;
+  font-family: roboto; 
+}
+
+/* Add dividers between the benefits */
+.benefit-divider {
+  height: 250px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1; 
+}
+
+/* Placing the dividers*/
+.benefit-item:nth-child(1) .benefit-divider {
+  left: 112%; 
+  width: 1px;
+}
+
+.benefit-item:nth-child(2) .benefit-divider {
+  left: 112%; 
+  width: 2px;
+}
+
+.benefit-item:nth-child(3) .benefit-divider {
+  left:112%;
+  width: 2px;
+}
+
+/* Remove divider after the last item */
+.benefit-item:nth-child(4) .benefit-divider {
+  display: none;
+}
+
+/* Latest News Section */
+.news {
+  padding: 2rem;
+  max-width: 100%;
+  background-color: #f9f9f9;
+  background-image: url('images/latest-news-back.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.news h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-family: roboto;
+  color: #333;
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.news-item {
+  background-color: #D9D9D9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 400px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-family:roboto ;
+}
+
+.news-item p {
+  font-size: 1rem;
+  font-family: roboto;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.news-item a {
+  font-size: 0.9rem;
+  color: #00bebe;
+  text-decoration: none;
+}
+
+.news-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.news-item {
+  background-color: #fff; /* Optional background for better readability */
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+
+/* Partners Section */
+
+.partners {
+  background-color:white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.partners h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.partners img {
+  max-width:100%;
+  border-radius: 8px;
+}
+
+/* --------------------------------HOME PAGE-------------------------------- */
+
+/* --------------------------------ABOUT-US PAGE-------------------------------- */
+
+
+/* About Header Section */
+.about-header {
+  position: relative; 
+  text-align: center;
+  color: #000;
+  padding: 190px 0;
+  height: 100vh; 
+  overflow: hidden; 
+  margin-bottom: 0px;
+}
+
+.about-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/about-back-2.png'); 
+  background-size: cover;
+  background-position: center;
+  opacity: 0.65; 
+  z-index: -1; 
+}
+
+.about-header h1 {
+  position: relative; 
+  z-index: 1;
+  font-size: 128px;
+  font-weight: 900;
+  font-family: roboto, sans-serif;
+  display: inline-block;
+}
+
+.about-header h1::after {
+  content: ".";
+  color: #59DFDC;
+  font-size: 60px;
+  position: relative;
+}
+
+
+/* Who We Are Section */
+.who-we-are {
+  background-size: cover;
+  background-position:center;
+  padding: 0px 20px;
+  background-color:white;
+  margin-bottom: 15%; 
+  margin-top: -0px;
+  z-index: -5;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.who-text {
+  flex: 1;
+  width: 645px;
+  height: 267px;
+  margin-left: 70px;
+  margin-right:0px;
+  margin-top: -100px;
+}
+
+.who-text h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: -80px;
+  margin-bottom: 15px;
+  font-family: roboto;
+}
+
+.highlight-text {
+  color: #8CFFC4;
+}
+
+.who-text p {
+  font-size: 24px;
+  line-height: 1.5;
+  font-family:roboto;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.who-image {
+  flex: 1;
+  text-align: center;
+  margin-right: 100px;
+  margin-top: -30px;
+}
+
+.who-image img {
+  width: 600px;
+  height: 484px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Mission and Vision Section */
+.mission-vision {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 80px 20px;
+  background-image: url('images/missionvision-back.png');
+  background-size: cover;
+  background-position:center;
+  margin-right: 0px;
+  margin-top: -200px;
+  position: relative;
+}
+
+
+.mission, .vision {
+  flex: 1;
+  width: 300px;
+  background-color: #D9D9D9;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 2;
+}
+
+.mission h3, .vision h3 {
+  
+  font-size: 36px;
+  font-family: roboto;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.mission h3{
+  text-align: right;
+}
+
+.mission p, .vision p {
+  font-size: 24px;
+  text-align: justify;
+  line-height: 24px;
+  color: #333;
+  font-weight: 400;
+  font-family: roboto;
+}
+
+
+.mission{
+  margin-top: 20px;
+  width: 689px;
+  height: 337px;
+  margin-left: 50px;
+}
+
+.vision{
+  margin-top: 350px;
+  margin-right: 50px;
+  width: 709px;
+  height: 288px;
+}
+
+
+/* Values Section Styling */
+.values-section {
+  background-image: url('images/benifits.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  color: #fff;
+  font-family: roboto;
+  position: relative;
+}
+
+.values-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.values-header .highlight {
+  color: #59DFDC; /* Aqua color for VALUES */
+}
+
+.values-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  position: relative;
+  z-index: 2; /* Ensure the content is on top of the background */
+}
+
+.value-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px; /* Adjust as needed */
+  position: relative;
+  z-index: 1; /* Ensure the content is on top of the dividers */
+}
+
+.value-icon {
+  width: 90px; /* Icon size */
+  height: 90px;
+  margin-bottom: 1rem;
+}
+
+.value-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.value-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.value-item p {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 1rem;
+}
+
+/* Add dividers between the values */
+.value-divider {
+  width: 1px;
+  height: 250px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1; /* Ensure dividers stay behind the content */
+}
+
+/* Placing the dividers at 23%, 49%, and 76% */
+.value-item:nth-child(1) .value-divider {
+  left: 340px; /* Divider between the first and second value */
+}
+
+.value-item:nth-child(2) .value-divider {
+  left: 340px; /* Divider between the second and third value */
+}
+
+.value-item:nth-child(3) .value-divider {
+  left: 340px; /* Divider between the third and fourth value */
+}
+
+/* Remove divider after the last item */
+.value-item:nth-child(4) .value-divider {
+  display: none;
+}
+
+
+/* --------------------------------ABOUT-US PAGE-------------------------------- */
+
+/* --------------------------------SERVICES PAGE-------------------------------- */
+
+/* HERO Section */
+
+
+.services-header {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #000;
+  padding: 190px 0;
+  position: relative; /* Ensure positioning works for pseudo-element */
+  margin-bottom: 100px;
+}
+
+.services-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-image: url('images/services.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.65; /* Set background opacity */
+  z-index: -1; /* Place it behind the content */
+}
+
+.services-header h1 {
+  position: relative; /* Ensure text stays on top of pseudo-element */
+  z-index: 1;
+  font-size: 128px;
+  font-weight: 900;
+  font-family: roboto;
+  display: inline-block;
+}
+
+
+.services-header h1::after {
+  content: ".";
+  color: #59DFDC;
+  font-size: 60px;
+  position: relative;
+}
+
+/* Subheading */
+.services-p {
+  font-size: 24px;
+  font-family: roboto;
+  font-weight: 400;
+  color: black;
+  line-height: 24px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Services Section */
+.services {
+  background-image: url(images/services-back.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 100px; /* Adjust spacing between service boxes */
+  padding: 50px;
+}
+
+.service-box {
+  width: 340px;
+  height: 340px;
+  background-color: #D9D9D9;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Aligns content at the top */
+  text-align: center;
+  transition: transform 0.2s;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  opacity: 1;
+}
+
+.overlay ul {
+  padding: 0;
+  list-style-type: none;
+  margin-top: -10px;
+  font-size: 0.9rem;
+  line-height: 0.9;
+}
+
+.overlay ul li {
+  font-family: roboto;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.service-box img {
+  width: 200px;
+  height: 200px;
+  margin-top: 40px;
+}
+
+
+.servicebox-heading {
+  font-size: 1rem;
+  font-family: roboto;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute; 
+  bottom: 10px; 
+  z-index: 2;
+  margin: 0;
+  text-align: center;
+  width: 100%; 
+}
+
+.service-box::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 0 12px 12px;
+  z-index: 1;
+}
+
+.service-box:hover .overlay {
+  opacity: 1;
+}
+
+/* Centering the last box */
+.services .single-box {
+  width: 100%; 
+  display: flex;
+  justify-content: center; 
+}
+
+/* Contact Section */
+.contact-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.contact-section button {
+  background-color: #384B7C;
+  width: 308px;
+  height: 59.96px;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-section button:hover {
+  background-color: #00CEC9;
+}
+
+/* --------------------------------SERVICES PAGE-------------------------------- */
+
+/* --------------------------------CONTACT PAGE-------------------------------- */
+
+.contact-page {
+  background-image: url(images/contact-back.png);
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact-heading {
+  font-size: 64px;
+  font-weight: 900;
+  text-align: center;
+  position: relative;
+  font-family: roboto;
+}
+
+.contact-heading .dot {
+  color: #00CEC9;
+}
+
+/* Contact Container */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+}
+
+.contact-left{
+  flex: 1;
+  background-color: #D9D9D9A6;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section Styling */
+
+.contact-left{
+  height: 640px;
+}
+
+.contact-left p {
+  margin: 1rem 0;
+}
+
+.contact-info{
+  margin-top: 5px;
+  font-weight: 300;
+  font-family: roboto;
+  font-size: 24px;
+}
+
+.contact-left p strong {
+  display: block;
+  margin-bottom: -30px;
+  margin-top: 60px;
+  font-size: 24px;
+  font-family: roboto;
+  font-weight: 700;
+}
+
+.contact-left a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  font-family: roboto;
+  font-size: 24px;
+}
+
+.contact-left a:hover {
+  text-decoration: underline
+}
+
+.contact-left img:hover{
+  transform: scale(1.2); 
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.contact-left img {
+  margin-right: 50px;
+  border-radius: 5px; 
+}
+
+.facebook-img{
+  height: 70px;
+  width:auto;
+}
+
+.linkedin-img{
+  width: 70px;
+  height: 70px;
+}
+
+/* Contact Right Section Styling */
+.contact-right {
+  flex: 1;
+  padding: 2rem;
+  background-color: white; 
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: -50px;
+}
+
+
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; 
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center; 
+  gap: 0.5rem; 
+  font-size: 0.9rem;
+  color: #333; 
+}
+
+
+.checkbox-group input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #384B7C; 
+}
+
+
+.contact-right input {
+  padding: 0.75rem;
+  border: 1px solid black;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.headings{
+  font-family: roboto;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.contact-right button {
+  background-color: #384B7C; 
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-start; 
+}
+
+.contact-right button:hover {
+  background-color: #00CEC9; 
+}
+
+/* Adjustments for Form Layout */
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.contact-right input[type="text"],
+.contact-right input[type="email"] {
+  margin-top: -20px; 
+}
+
+.map-section{
+  width:100%;
+  padding: 0px;
+  margin-top: 0px;;
+}
+
+.map-iframe {
+  width: 100%; /* Takes the full width of its container */
+  height: 400px; /* Default height */
+  width: 1510px; /* Optional max width for larger screens */
+  margin: 0 auto; /* Centers the iframe within the container */
+  border: 0; /* Removes border */
+}
+
+/*----------------------------------RESPONSIVE WEB DESIGNS----------------------------------*/
+
+
+@media (max-width: 480px) {
+  /* Header Styling */
+
+  .body{
+    font-family: roboto;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center; /* Center the header items */
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+
+  .nav {
+    flex: none; /* Reset flex property */
+    width: 100%; /* Make navigation full-width */
+    justify-content: center;
+  }
+
+  .nav ul {
+    display: flex;
+    justify-content: center; /* Center links */
+    gap: 1.5rem; /* Adjust gap for smaller screens */
+    margin: 0; /* Remove margin to avoid unnecessary spacing */
+  }
+
+  .nav ul li a {
+    white-space: nowrap; /* Prevent "About us" from breaking into two lines */
+  }
+
+  .contact-button {
+    margin-top: 1rem; /* Add spacing above the button for small screens */
+    margin-bottom: 5%;
+  }
+
+  .btn-contact {
+    padding: 0.5rem 1rem;
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  /* Hero Section Styling */
+  .hero-section {
+    height: auto; /* Allow height to adjust */
+    padding: 2rem 1rem; /* Add padding */
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem; /* Smaller font size */
+    margin-left: 0; /* Remove left margin */
+    text-align: center; /* Center text */
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem; /* Smaller font size */
+    margin-left: 0; /* Remove left margin */
+    text-align: center; /* Center text */
+  }
+
+  .hero-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .btn-hero {
+    padding: 0.5rem 2rem; /* Adjust button size */
+    font-size: 1rem; /* Smaller font size */
+  }
+
+  /* What We Do Section */
+  .what-we-do-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    gap: 1.5rem; /* Space between items */
+  }
+
+  .what-we-do-box {
+    width: 90%; /* Full width on small screens */
+    margin: 0 auto; /* Center the box */
+  }
+
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full screen width */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .about-us-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width */
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-content {
+    width: 100%; /* Force full width */
+    margin: 0 auto; /* Remove any additional margins */
+    padding: 1rem; /* Optional: Add internal padding for spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-align: center; /* Center-align the text */
+  }
+
+  .about-content p {
+    font-size: 1rem; /* Adjust font size */
+    line-height: 1.6; /* Improve readability */
+    margin: 0 0 1rem; /* Space between paragraphs */
+  }
+
+  /* Benefits Section */
+  .benefits-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    gap: 1.5rem; /* Space between items */
+  }
+
+  .benefit-item {
+    width: 90%; /* Full width on small screens */
+  }
+  .benefit-divider{
+    display: none;
+  }
+
+  /* Latest News Section */
+  .news-container {
+    flex-direction: column; /* Stack news items vertically */
+    align-items: center; /* Center items */
+    gap: 1.5rem; /* Space between items */
+  }
+
+  .news-item {
+    width: 90%; /* Full width on small screens */
+  }
+
+  /* Partners Section */
+  .partners img {
+    width: 100%; /* Scale down images */
+  }
+
+  /* Footer Styling */
+  .footer-container {
+    grid-template-columns: 1fr; /* Stack footer sections */
+  }
+
+  .footer-left, .footer-right {
+    align-items: center; /* Center footer items */
+    text-align: center; /* Center text */
+  }
+
+  .footer-logo img {
+    width: 30%; /* Scale down the logo */
+  }
+
+  /* ----------------------------------ABOUT PAGE ---------------------------------- */
+
+  .about-header{
+    height: auto; /* Allow height to adjust */
+    padding: 3.5rem 1rem; 
+    margin-bottom:10%;
+  }
+
+  .about-header h1{
+    font-size: 2.5rem; /* Smaller font size */
+    margin-left: 0; /* Remove left margin */
+    text-align: center; /* Center text */
+  }
+
+
+  .contact-container{
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    gap: 1.5rem; /* Space between items */
+  }
+
+  .who-we-are {
+    margin-top: 20%;
+    text-align: left; /* Center text for mobile */
+    margin-left: -10%;
+    width: 90%;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+  }
+
+  .who-text {
+    width: 90%; /* Full width for text */
+    margin: 0; /* Remove margin */
+    align-items: center;
+  }
+
+  .who-text h2 {
+    font-size: 24px; /* Adjust heading size for mobile */
+    margin-bottom: 0.5rem; /* Space below heading */
+  }
+
+  .who-text p {
+    font-size: 16px; /* Adjust paragraph size for mobile */
+    line-height: 1.5; /* Improve readability */
+    margin: 0; /* Remove margin */
+  
+  }
+
+  .who-image {
+    width: 105%; /* Full width for image container */
+    margin-top: 1rem; /* Space above image */
+  }
+
+  .who-image img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    margin-bottom: 50%;
+    align-items: center;
+    margin-left: 16%;
+  }
+
+  .mission-vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensure the section doesn't exceed the screen width */
+    padding: 0 15px; /* Add padding to prevent content from touching the edges */
+    box-sizing: border-box;
+    gap: 10%;
+    margin-bottom: 10%;
+  }
+
+  .mission-vision .mission,
+  .mission-vision .vision {
+    width: 100%; /* Make the boxes 100% of the container */
+    max-width: 90%; /* Prevent them from being too wide */
+    margin: 10px auto; /* Center them and add vertical spacing */
+    padding: 20px; /* Adjust padding for readability */
+    box-sizing: border-box; /* Ensure padding doesn’t increase width */
+  }
+
+  .mission-vision .mission h3,
+  .mission-vision .vision h3 {
+    font-size: 20px; /* Reduce the heading font size */
+    text-align: center; /* Center align the heading */
+  }
+
+  .mission-vision .mission p,
+  .mission-vision .vision p {
+    font-size: 15px; /* Reduce the heading font size */
+    text-align: center; /* Center align the heading */
+  }
+  /* Benefits Section */
+  .values-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    gap: 1.5rem; /* Space between items */
+  }
+
+  .value-item {
+    width: 90%; /* Full width on small screens */
+  }
+  .value-divider{
+    display: none;
+  }
+
+  /* ----------------------------------ABOUT PAGE---------------------------------- */
+
+  /* ----------------------------------SERVICE PAGE---------------------------------- */
+
+  .services-header{
+    height: 10%; /* Allow height to adjust */
+    padding: 3.5rem 1rem; 
+    margin-bottom:10%;
+  }
+  
+  .services-header h1{
+    font-size: 2.5rem; /* Smaller font size */
+    margin-left: 0; /* Remove left margin */
+    text-align: center; /* Center text */
+  }
+
+  .services-header img{
+    width: 90%;
+    height: 10%;
+  }
+
+  .services-p{
+    font-size: 16px;
+    margin-bottom: 1%;
+  }
+
+/* ----------------------------------SERVICE PAGE---------------------------------- */
+
+/* ----------------------------------CONTACT PAGE---------------------------------- */
+
+.facebook-img{
+  width: 7%;
+  height: auto;
+  border-radius: 0%;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.linkedin-img{
+  width: 15%;
+  height: 7%;
+}
+
+.contact-right{
+  margin-top: 10%;
+  width: 90%;
+}
+
+.map-iframe{
+  width: 100%;
+}
+
+
+/* ----------------------------------CONTACT PAGE---------------------------------- */
+
+}
+
+
+
+/*----------------------------------RESPONSIVE WEB DESIGNS----------------------------------*/
