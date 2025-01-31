@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-emailjs.init("ymOv2NFKSpoLpDr9y");
+emailjs.init("_mdQfJhw3c7ajbNVi");
 
 console.log("EmailJS Initialized:", emailjs);
 
