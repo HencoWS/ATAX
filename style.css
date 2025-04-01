@@ -705,6 +705,12 @@ footer {
   margin-bottom: 8px;
 }
 
+.resource-parent{
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Adjust as needed */
+}
+
 .resource-container a {
   display: inline-block;
   text-decoration: none;
@@ -723,6 +729,10 @@ footer {
   background-color: #005fa3;
 }
 
+.resource-image{
+  border-radius: 2%;
+  margin-bottom: 50px;
+}
 
 /* Partners Section */
 
